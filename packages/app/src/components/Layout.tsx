@@ -4,11 +4,9 @@ import { Footer } from './Footer'
 
 export function Layout(props: PropsWithChildren) {
   return (
-    <div className='flex flex-col min-h-screen bg-base-100'>
+    <div className='flex flex-col min-h-screen bg-[#0f172a] text-slate-100'>
       <Header />
-
-      <main className='grow px-4 container max-w-5xl mx-auto py-6'>{props.children}</main>
-
+      <main className='grow'>{props.children}</main>
       <Footer />
     </div>
   )

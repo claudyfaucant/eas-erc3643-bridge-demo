@@ -41,12 +41,12 @@ export const viewport: Viewport = {
   height: 'device-height',
   initialScale: 1.0,
   viewportFit: 'cover',
-  themeColor: '#000000',
+  themeColor: '#0f172a',
 }
 
 export default function RootLayout(props: PropsWithChildren) {
   return (
-    <html lang='en'>
+    <html lang='en' data-theme='business'>
       <head>
         <link
           rel='icon'
@@ -54,8 +54,8 @@ export default function RootLayout(props: PropsWithChildren) {
         />
       </head>
 
-      <body>
-        <Providers cookies={null}>
+      <body className='bg-[#0f172a]'>
+        <Providers>
           <Layout>{props.children}</Layout>
         </Providers>
       </body>

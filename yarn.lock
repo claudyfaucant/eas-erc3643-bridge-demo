@@ -176,21 +176,6 @@
   dependencies:
     hardhat "2.22.4"
 
-"@ethereum-attestation-service/eas-sdk@^2.9.0":
-  version "2.9.0"
-  resolved "https://registry.npmjs.org/@ethereum-attestation-service/eas-sdk/-/eas-sdk-2.9.0.tgz"
-  integrity sha512-jEtBlhfm0HFkl64jAa4rxOXjEQkblTHqSmLFhttPf9y+ALEOk4qgJzV9knnJ7Yh+jFs1jxbTrVeUGap03Fwy9g==
-  dependencies:
-    "@ethereum-attestation-service/eas-contracts" "1.7.1"
-    "@openzeppelin/merkle-tree" "^1.0.7"
-    ethers "^6.13.2"
-    js-base64 "^3.7.7"
-    lodash "^4.17.21"
-    multiformats "9.9.0"
-    pako "^2.1.0"
-    semver "^7.6.3"
-    viem "^2.19.2"
-
 "@ethereumjs/common@^3.2.0":
   version "3.2.0"
   resolved "https://registry.npmjs.org/@ethereumjs/common/-/common-3.2.0.tgz"
@@ -1049,23 +1034,6 @@
   dependencies:
     lit "^3"
 
-"@reown/appkit-adapter-wagmi@^1.7.3":
-  version "1.8.15"
-  resolved "https://registry.npmjs.org/@reown/appkit-adapter-wagmi/-/appkit-adapter-wagmi-1.8.15.tgz"
-  integrity sha512-WTMffoHqiDUMRhWmKcuyzxEegiJMvl19ET2+l0XrAEWRyzj2rUM68f1JBZQB3zWV1pFHc8SxOC9Kbk5pa8lGXA==
-  dependencies:
-    "@reown/appkit" "1.8.15"
-    "@reown/appkit-common" "1.8.15"
-    "@reown/appkit-controllers" "1.8.15"
-    "@reown/appkit-polyfills" "1.8.15"
-    "@reown/appkit-scaffold-ui" "1.8.15"
-    "@reown/appkit-utils" "1.8.15"
-    "@reown/appkit-wallet" "1.8.15"
-    "@walletconnect/universal-provider" "2.23.0"
-    valtio "2.1.7"
-  optionalDependencies:
-    "@wagmi/connectors" ">=5.9.9"
-
 "@reown/appkit-common@1.7.8":
   version "1.7.8"
   resolved "https://registry.npmjs.org/@reown/appkit-common/-/appkit-common-1.7.8.tgz"
@@ -1244,7 +1212,26 @@
     "@walletconnect/logger" "3.0.0"
     zod "3.22.4"
 
-"@reown/appkit@^1.7.3", "@reown/appkit@1.8.15":
+"@reown/appkit@1.7.8":
+  version "1.7.8"
+  resolved "https://registry.npmjs.org/@reown/appkit/-/appkit-1.7.8.tgz"
+  integrity sha512-51kTleozhA618T1UvMghkhKfaPcc9JlKwLJ5uV+riHyvSoWPKPRIa5A6M1Wano5puNyW0s3fwywhyqTHSilkaA==
+  dependencies:
+    "@reown/appkit-common" "1.7.8"
+    "@reown/appkit-controllers" "1.7.8"
+    "@reown/appkit-pay" "1.7.8"
+    "@reown/appkit-polyfills" "1.7.8"
+    "@reown/appkit-scaffold-ui" "1.7.8"
+    "@reown/appkit-ui" "1.7.8"
+    "@reown/appkit-utils" "1.7.8"
+    "@reown/appkit-wallet" "1.7.8"
+    "@walletconnect/types" "2.21.0"
+    "@walletconnect/universal-provider" "2.21.0"
+    bs58 "6.0.0"
+    valtio "1.13.2"
+    viem ">=2.29.0"
+
+"@reown/appkit@1.8.15":
   version "1.8.15"
   resolved "https://registry.npmjs.org/@reown/appkit/-/appkit-1.8.15.tgz"
   integrity sha512-eO3lcZvXwkcBZqpV+7InlzbLddP/wIJjaqbzlyCJAb0PfQ6fY40etiVpK38eFEDX1WGEYOvhKVO6aMgZtaO2lg==
@@ -1264,25 +1251,6 @@
     viem ">=2.37.9"
   optionalDependencies:
     "@lit/react" "1.0.8"
-
-"@reown/appkit@1.7.8":
-  version "1.7.8"
-  resolved "https://registry.npmjs.org/@reown/appkit/-/appkit-1.7.8.tgz"
-  integrity sha512-51kTleozhA618T1UvMghkhKfaPcc9JlKwLJ5uV+riHyvSoWPKPRIa5A6M1Wano5puNyW0s3fwywhyqTHSilkaA==
-  dependencies:
-    "@reown/appkit-common" "1.7.8"
-    "@reown/appkit-controllers" "1.7.8"
-    "@reown/appkit-pay" "1.7.8"
-    "@reown/appkit-polyfills" "1.7.8"
-    "@reown/appkit-scaffold-ui" "1.7.8"
-    "@reown/appkit-ui" "1.7.8"
-    "@reown/appkit-utils" "1.7.8"
-    "@reown/appkit-wallet" "1.7.8"
-    "@walletconnect/types" "2.21.0"
-    "@walletconnect/universal-provider" "2.21.0"
-    bs58 "6.0.0"
-    valtio "1.13.2"
-    viem ">=2.29.0"
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
@@ -2023,7 +1991,7 @@
   resolved "https://registry.npmjs.org/@tanstack/query-core/-/query-core-5.90.12.tgz"
   integrity sha512-T1/8t5DhV/SisWjDnaiU2drl6ySvsHj1bHBCWNXd+/T+Hh1cf6JodyEYMd5sgwm+b/mETT4EV3H+zCVczCU5hg==
 
-"@tanstack/react-query@^5.74.4", "@tanstack/react-query@>=5.0.0", "@tanstack/react-query@>=5.59.0":
+"@tanstack/react-query@>=5.0.0", "@tanstack/react-query@>=5.59.0":
   version "5.90.12"
   resolved "https://registry.npmjs.org/@tanstack/react-query/-/react-query-5.90.12.tgz"
   integrity sha512-graRZspg7EoEaw0a8faiUASCyJrqjKPdqJ9EwuDRUF9mEYJ1YPczI9H+/agJ0mOJkPCJDk0lsz5QTrLZ/jQ2rg==
@@ -2274,30 +2242,6 @@
   version "1.11.1"
   resolved "https://registry.npmjs.org/@unrs/resolver-binding-linux-x64-musl/-/resolver-binding-linux-x64-musl-1.11.1.tgz"
   integrity sha512-rV0YSoyhK2nZ4vEswT/QwqzqQXw5I6CjoaYMOX0TqBlWhojUf8P94mvI7nuJTeaCkkds3QE4+zS8Ko+GdXuZtA==
-
-"@wagmi/cli@^2.1.16":
-  version "2.8.0"
-  resolved "https://registry.npmjs.org/@wagmi/cli/-/cli-2.8.0.tgz"
-  integrity sha512-2VhDj8u8vwLZwMZ8CX4pTuO0Qm28Z9uH9qOEWgF/xXUCeVV+4e4YsknEyGcoxYwEmTkdlCmuCvMj4up2XK6vxQ==
-  dependencies:
-    abitype "^1.0.4"
-    bundle-require "^5.1.0"
-    cac "^6.7.14"
-    change-case "^5.4.4"
-    chokidar "4.0.1"
-    dedent "^0.7.0"
-    dotenv "^16.3.1"
-    dotenv-expand "^10.0.0"
-    esbuild "~0.25.4"
-    escalade "3.2.0"
-    fdir "^6.1.1"
-    nanospinner "1.2.2"
-    pathe "^1.1.2"
-    picocolors "^1.0.0"
-    picomatch "^3.0.0"
-    prettier "^3.0.3"
-    viem "2.x"
-    zod "^4.1.11"
 
 "@wagmi/connectors@>=5.9.9":
   version "7.0.2"
@@ -2908,9 +2852,10 @@ apg-js@^4.4.0:
   integrity sha512-fefmXFknJmtgtNEXfPwZKYkMFX4Fyeyz+fNF6JWp87biGOPslJbCBVU158zvKRZfHBKnJDy8CMM40oLFGkXT8Q==
 
 "app@file:/home/clawdbot/projects/eas-bridge-demo/packages/app":
-  version "0.2.0"
+  version "0.3.0"
   resolved "file:packages/app"
   dependencies:
+    "@ethereum-attestation-service/eas-sdk" "^2.9.0"
     "@heroicons/react" "^2.2.0"
     "@reown/appkit" "^1.7.3"
     "@reown/appkit-adapter-wagmi" "^1.7.3"
@@ -3683,11 +3628,6 @@ date-fns@^2.29.3:
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
   dependencies:
     "@babel/runtime" "^7.21.0"
-
-dayjs@^1.11.13:
-  version "1.11.19"
-  resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.11.19.tgz"
-  integrity sha512-t5EcLVS6QPBNqM2z8fakk/NKel+Xzshgt8FFKAn+qwlD1pzZWxh0nVCrvFK7ZDb6XucZeF9z8C7CBWTRIVApAw==
 
 dayjs@1.11.13:
   version "1.11.13"
@@ -6243,11 +6183,6 @@ picomatch@^2.3.1:
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-"picomatch@^3 || ^4", picomatch@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/picomatch/-/picomatch-3.0.1.tgz"
-  integrity sha512-I3EurrIQMlRc9IaAZnqRR044Phh2DXY+55o7uJ0V+hYZAcQYSuFWsc9q5PvyDHUSCe1Qxn/iBz+78s86zWnGag==
-
 picomatch@^4.0.3:
   version "4.0.3"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-4.0.3.tgz"
@@ -6502,13 +6437,6 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-toastify@^10.0.5:
-  version "10.0.6"
-  resolved "https://registry.npmjs.org/react-toastify/-/react-toastify-10.0.6.tgz"
-  integrity sha512-yYjp+omCDf9lhZcrZHKbSq7YMuK0zcYkDFTzfRFgTXkTFHZ1ToxwAonzA4JI5CxA91JpjFLmwEsZEgfYfOqI1A==
-  dependencies:
-    clsx "^2.1.0"
 
 react@*, "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^18 || ^19", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react@^19.0.0, react@^19.2.3, "react@>= 16 || ^19.0.0-rc", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", react@>=18, react@>=18.0.0:
   version "19.2.3"
@@ -6944,14 +6872,6 @@ side-channel@^1.1.0:
     side-channel-list "^1.0.0"
     side-channel-map "^1.0.1"
     side-channel-weakmap "^1.0.2"
-
-siwe@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/siwe/-/siwe-3.0.0.tgz"
-  integrity sha512-P2/ry7dHYJA6JJ5+veS//Gn2XDwNb3JMvuD6xiXX8L/PJ1SNVD4a3a8xqEbmANx+7kNQcD8YAh1B9bNKKvRy/g==
-  dependencies:
-    "@spruceid/siwe-parser" "^3.0.0"
-    "@stablelib/random" "^1.0.1"
 
 slow-redact@^0.3.0:
   version "0.3.2"
@@ -7646,7 +7566,7 @@ viem@2.23.2:
     ox "0.6.7"
     ws "8.18.0"
 
-wagmi@^2.14.16, wagmi@>=2.0.0, wagmi@>=2.17.5:
+wagmi@>=2.0.0, wagmi@>=2.17.5:
   version "2.19.5"
   resolved "https://registry.npmjs.org/wagmi/-/wagmi-2.19.5.tgz"
   integrity sha512-RQUfKMv6U+EcSNNGiPbdkDtJwtuFxZWLmvDiQmjjBgkuPulUwDJsKhi7gjynzJdsx2yDqhHCXkKsbbfbIsHfcQ==

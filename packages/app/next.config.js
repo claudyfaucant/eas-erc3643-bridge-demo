@@ -3,12 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  webpack: (config) => {
-    config.externals.push('pino-pretty', 'lokijs', 'encoding')
-    return config
-  },
   images: {
-    remotePatterns: [{ hostname: '*' }],
     unoptimized: true,
   },
 }

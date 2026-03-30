@@ -1,29 +1,19 @@
 {
   "name": "app",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix",
-    "wagmi": "wagmi generate"
+    "lint": "next lint --fix"
   },
   "dependencies": {
-    "@ethereum-attestation-service/eas-sdk": "^2.9.0",
     "@heroicons/react": "^2.2.0",
-    "@reown/appkit": "^1.7.3",
-    "@reown/appkit-adapter-wagmi": "^1.7.3",
-    "@tanstack/react-query": "^5.74.4",
-    "dayjs": "^1.11.13",
     "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^4.11.0",
-    "react-toastify": "^10.0.5",
-    "siwe": "^3.0.0",
-    "viem": "^2.27.2",
-    "wagmi": "^2.14.16"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -32,7 +22,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@wagmi/cli": "^2.1.16",
     "daisyui": "^5",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
