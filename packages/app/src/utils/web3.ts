@@ -11,6 +11,7 @@ export const WALLETCONNECT_ADAPTER = new WagmiAdapter({
   projectId: WALLETCONNECT_PROJECT_ID,
   networks: ETH_CHAINS,
   ssr: true,
+  // @ts-expect-error - Type mismatch between wagmi storage and reown adapter
   storage: createStorage({
     storage: cookieStorage,
   }),

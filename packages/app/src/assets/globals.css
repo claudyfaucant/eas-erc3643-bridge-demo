@@ -1,2 +1,48 @@
 @import 'tailwindcss';
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: corporate --default, business --prefersdark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(var(--b2));
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(var(--p));
+  border-radius: 4px;
+}
+
+/* Step card animations */
+.step-card {
+  transition: all 0.3s ease;
+}
+.step-card:hover {
+  transform: translateY(-2px);
+}
+.step-card.locked {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Progress indicator */
+.progress-step {
+  position: relative;
+}
+.progress-step::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 24px;
+  background: oklch(var(--b3));
+}
+.progress-step:last-child::after {
+  display: none;
+}
+.progress-step.completed::after {
+  background: oklch(var(--su));
+}
