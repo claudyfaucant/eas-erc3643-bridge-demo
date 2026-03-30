@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import { PropsWithChildren } from 'react'
 import { SITE_DESCRIPTION, SITE_EMOJI, SITE_INFO, SITE_NAME, SITE_URL, SOCIAL_TWITTER } from '@/utils/site'
 import { Layout } from '@/components/Layout'
-import { headers } from 'next/headers'
 import { Providers } from '@/context'
 import '../assets/globals.css'
 
@@ -45,10 +44,7 @@ export const viewport: Viewport = {
   themeColor: '#000000',
 }
 
-export default async function RootLayout(props: PropsWithChildren) {
-  const headersList = await headers()
-  const cookies = headersList.get('cookie')
-
+export default function RootLayout(props: PropsWithChildren) {
   return (
     <html lang='en'>
       <head>
@@ -59,7 +55,7 @@ export default async function RootLayout(props: PropsWithChildren) {
       </head>
 
       <body>
-        <Providers cookies={cookies}>
+        <Providers cookies={null}>
           <Layout>{props.children}</Layout>
         </Providers>
       </body>
