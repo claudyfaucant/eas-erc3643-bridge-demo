@@ -18,6 +18,9 @@ export function Header() {
           <LinkComponent href='/demo' className='text-slate-400 hover:text-white transition-colors'>
             Interactive Demo
           </LinkComponent>
+          <LinkComponent href='/standards' className='text-slate-400 hover:text-white transition-colors'>
+            Standards
+          </LinkComponent>
         </nav>
       </div>
 
