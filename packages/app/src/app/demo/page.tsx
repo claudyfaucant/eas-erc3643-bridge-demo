@@ -58,7 +58,7 @@ export default function DemoPage() {
             The EAS-ERC3643 bridge is open source and ready for integration with your security token platform.
           </p>
           <a
-            href='https://github.com/EntEthAlliance/eas-3643-bridge'
+            href='https://github.com/EntEthAlliance/rnd-rwa-erc3643-eas/'
             target='_blank'
             rel='noopener noreferrer'
             className='btn btn-lg bg-blue-600 hover:bg-blue-500 border-none text-white gap-2 px-8 shadow-lg shadow-blue-600/25'
